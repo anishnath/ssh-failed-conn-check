@@ -1,0 +1,4 @@
+.idea*
+SSHLogChecker.iml
+ssh-failed-connections
+main
