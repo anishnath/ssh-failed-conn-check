@@ -32,6 +32,31 @@ To use the program, run the following command:
 ./ssh-failed-connections -host=192.168.1.100 -days=10 -username=ec2-user
 ```
 
+Output:
+```bash
+❯ ./ssh-failed-connections  -host=72.20.6.27 -username=ubuntu
+Apr 28 18:45:55 host5722-host5722-vie-0 sshd[1365789]: Connection closed by authenticating user root 41.111.227.75 port 47306 [preauth]
+Apr 28 18:45:55 host5722-host5722-vie-0 sshd[1365792]: Connection closed by authenticating user ubuntu 41.111.227.75 port 47356 [preauth]
+Apr 28 18:45:55 host5722-host5722-vie-0 sshd[1365796]: Connection closed by authenticating user root 41.111.227.75 port 47322 [preauth]
+Apr 28 18:45:56 host5722-host5722-vie-0 sshd[1365816]: Connection closed by authenticating user root 41.111.227.75 port 47318 [preauth]
+Apr 28 18:55:04 host5722-host5722-vie-0 sshd[1366175]: Connection closed by authenticating user ubuntu 103.208.70.204 port 33977 [preauth]
+Apr 28 18:57:31 host5722-host5722-vie-0 sshd[1366230]: Connection closed by authenticating user sol 103.208.70.204 port 39383 [preauth]
+Apr 28 19:03:25 host5722-host5722-vie-0 sshd[1366346]: Connection closed by authenticating user root 101.43.1.7 port 56838 [preauth]
+Apr 28 19:03:26 host5722-host5722-vie-0 sshd[1366362]: Connection closed by authenticating user ubuntu 101.43.1.7 port 56806 [preauth]
+Apr 28 19:35:06 host5722-host5722-vie-0 sshd[1366916]: Connection closed by authenticating user ubuntu 103.208.70.204 port 45954 [preauth]
+Apr 28 19:35:28 host5722-host5722-vie-0 sshd[1366926]: Connection closed by authenticating user ubuntu 103.208.70.204 port 54116 [preauth]
+Apr 28 19:35:37 host5722-host5722-vie-0 sshd[1366929]: Connection closed by authenticating user ubuntu 103.208.70.204 port 43460 [preauth]
+Apr 28 19:35:58 host5722-host5722-vie-0 sshd[1366937]: Connection closed by authenticating user ubuntu 103.208.70.204 port 36053 [preauth]
+Apr 28 19:52:28 host5722-host5722-vie-0 sshd[1367539]: Connection closed by authenticating user nobody 5.10.250.44 port 54006 [preauth]
+Apr 28 20:35:55 host5722-host5722-vie-0 sshd[1369919]: Connection closed by authenticating user ubuntu 103.208.70.204 port 7207 [preauth]
+Apr 28 20:35:57 host5722-host5722-vie-0 sshd[1369921]: Connection closed by authenticating user ubuntu 103.208.70.204 port 65517 [preauth]
+Apr 28 20:37:17 host5722-host5722-vie-0 sshd[1370047]: Connection closed by authenticating user ubuntu 103.208.70.204 port 40957 [preauth]
+Apr 28 20:37:27 host5722-host5722-vie-0 sshd[1370051]: Connection closed by authenticating user ubuntu 103.208.70.204 port 11866 [preauth]
+Apr 28 20:42:03 host5722-host5722-vie-0 sshd[1370331]: Connection closed by authenticating user root 14.36.134.124 port 41764 [preauth]
+Apr 28 20:44:10 host5722-host5722-vie-0 sshd[1370459]: Connection closed by authenticating user ubuntu 103.208.70.204 port 4340 [preauth]
+
+````
+
 Running locally 
 ```bash
 ./ssh-failed-connections 
